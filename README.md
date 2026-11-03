@@ -24,33 +24,35 @@ The statewide case contains **250,827** 1-km grid cells. Feasible relay configur
 
 ## Computational supplement
 
-The **author-provided computational supplement** is organized under `research/` so its README and file manifest remain separate from this repository's publication metadata. The clean upload package contains **497 files**, with no compiled Python caches or local-only markers.
+The author-provided computational package is organized at the **repository root**. This avoids duplicating the source already published under `code/` and `data/`. The research files comprise eight Python source modules, derived spatial input tables, saved run records and allocation certificates, spatial sensitivity results, reproducible figures and tables, and a SHA-256 manifest.
 
-Once the research package has been imported, its directory includes:
+| Location | Contents |
+| --- | --- |
+| `code/` | Capacitated location model, SMA-inspired/VNS/relay algorithms, sensitivity experiments, validation, and figure/table generation |
+| `data/` | Derived ANAC/IBGE candidate and grid inputs, parameters, original site selections, and statewide traces |
+| `results/` | Saved seed-level intensity, spatial-demand, grid-resolution, boundary, and envelope experiments (JSON, NPZ, CSV) |
+| `figures/`, `tables/` | Generated graphics and manuscript table fragments |
+| `Supplementary_Information.tex`, `.pdf` | Detailed author-provided results, not the publisher's formally hosted supplement |
+| `requirements.txt`, `software_versions.json` | Pinned computational environment |
+| `validation_report.json`, `MANIFEST_SHA256.txt` | Supplied validation report and file-integrity checks |
 
-- `research/code/`: capacitated location model, SMA-inspired search, VNS/relay procedures, sensitivity experiments, validation, and figure/table generation.
-- `research/data/`: derived ANAC/IBGE grid and candidate inputs, parameters, original selections, and statewide traces.
-- `research/results/`: 45 demand-intensity runs and saved composition, boundary, resolution, and geometric-envelope experiments, including paired JSON/NPZ allocation certificates.
-- `research/figures/` and `research/tables/`: generated figures and manuscript table fragments.
-- `research/Supplementary_Information.pdf` and `.tex`: detailed computational results supplied by the authors, not an official publisher-hosted supplement.
-- `research/README.md`, `research/requirements.txt`, `research/software_versions.json`, `research/validation_report.json`, and `research/MANIFEST_SHA256.txt`: usage, environment, reported validation, and file-integrity information.
-
-**Availability:** If the `research/` folder is absent on GitHub, the computational ZIP has not yet been imported; the documentation and publication page alone do not constitute an uploaded code/data release.
+If some of these directories are absent on GitHub, the full computational archive has not yet been uploaded. Do not interpret a partially populated repository as an independently reproducible package.
 
 ### Quick start
 
-With Python 3.12, from the repository root:
+Use Python 3.12. From the repository root:
 
 ```bash
-python -m pip install -r research/requirements.txt
-python research/code/generate_tables.py
-python research/code/generate_figures.py
-python research/code/validate_results.py
+python -m pip install -r requirements.txt
+sha256sum -c MANIFEST_SHA256.txt   # On systems with sha256sum; before regeneration
+python code/generate_tables.py
+python code/generate_figures.py
+python code/validate_results.py
 ```
 
-To confirm file integrity **before** running scripts (which can rewrite generated files), run `sha256sum -c MANIFEST_SHA256.txt` from the `research/` directory on platforms that provide `sha256sum`.
+The supplied validation report records **147** checked continuous-allocation results and **44 of 45** feasible demand-intensity runs. This is a saved report, not a claim of independent cross-platform rerunning.
 
-The supplied `research/validation_report.json` records 147 checked allocation records and 44 feasible outcomes among 45 demand-intensity runs. It is a saved report; it is not a guarantee of cross-platform bitwise reproduction. Some exact reoptimization commands require a **Gurobi license**. See `research/README.md` for the optional `run_intensity.py` and `run_spatial.py` commands, including their overwrite behavior.
+To check the saved intensity selections, run `python code/run_intensity.py`. Fresh stochastic runs require `--rerun` and can replace checkpoint files, so perform them in a separate copy. Controlled spatial experiments are available through `python code/run_spatial.py`. Some exact reoptimization procedures require **Gurobi** and an active solver license.
 
 ## Data and software provenance
 
