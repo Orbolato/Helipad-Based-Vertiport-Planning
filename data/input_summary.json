@@ -1,0 +1,29 @@
+{
+  "light": {
+    "cells": 1709,
+    "candidates": 185,
+    "population": 12190164.0,
+    "whole_cell_area_km2": 1708.8305912309297,
+    "boundary_area_km2": 1521.0507066363023,
+    "area_min": 0.9996816795125969,
+    "area_max": 1.0000625293860514
+  },
+  "medium": {
+    "cells": 2946,
+    "candidates": 222,
+    "population": 14645499.0,
+    "whole_cell_area_km2": 2946.007035442935,
+    "boundary_area_km2": 2634.4443596355727,
+    "area_min": 0.999659322194731,
+    "area_max": 1.0005162015013838
+  },
+  "heavy": {
+    "cells": 250827,
+    "candidates": 609,
+    "population": 44410127.0,
+    "whole_cell_area_km2": 251751.13571447105,
+    "boundary_area_km2": 249135.14753995862,
+    "area_min": 0.9992001614527608,
+    "area_max": 1.016550470344662
+  }
+}

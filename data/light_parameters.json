@@ -1,0 +1,15 @@
+{
+  "TIPO": "municipios",
+  "CODIGOS": [
+    "3550308"
+  ],
+  "NOME": "São Paulo",
+  "KAPPA": 0.005,
+  "PHI": 0.005,
+  "ETA_DEMANDA": 0.2,
+  "ETA_TERRITORIO": 0.7,
+  "RAIO_AERONAVE_KM": 10.0,
+  "RAIO_SOLO_KM": 7.0,
+  "RAIO_ELEV_KM": 6.0,
+  "EXACT_TIME_LIMIT_SEC": 1800.0
+}

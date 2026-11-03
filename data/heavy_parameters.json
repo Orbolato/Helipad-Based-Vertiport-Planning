@@ -1,0 +1,16 @@
+{
+  "TIPO": "estado",
+  "NOME": "São Paulo (Estado)",
+  "KAPPA": 0.015,
+  "PHI": 0.015,
+  "ETA_DEMANDA": 0.3,
+  "ETA_TERRITORIO": 0.8,
+  "RAIO_AERONAVE_KM": 10.0,
+  "RAIO_SOLO_KM": 5.0,
+  "RAIO_ELEV_KM": 4.0,
+  "TERRITORIAL_DENOMINATOR": "candidate_reachable_area",
+  "REPORT_TOTAL_REGION_COVERAGE": true,
+  "ALLOCATION_SEMANTICS": "continuous_q_ij",
+  "FITNESS_CALL_BUDGET": 15780,
+  "FITNESS_CALL_BUDGET_DERIVATION": "30*(100+1) + 50*5*(50+1) = 15780"
+}

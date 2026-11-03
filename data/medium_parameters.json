@@ -1,0 +1,17 @@
+{
+  "TIPO": "municipios",
+  "CODIGOS": [
+    "3550308",
+    "3509502",
+    "3518800"
+  ],
+  "NOME": "SP + Campinas + Guarulhos",
+  "KAPPA": 0.01,
+  "PHI": 0.01,
+  "ETA_DEMANDA": 0.25,
+  "ETA_TERRITORIO": 0.75,
+  "RAIO_AERONAVE_KM": 10.0,
+  "RAIO_SOLO_KM": 6.0,
+  "RAIO_ELEV_KM": 5.0,
+  "EXACT_TIME_LIMIT_SEC": 1800.0
+}
