@@ -4,14 +4,14 @@
 
 This repository accompanies the **accepted** journal article *Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State* (Furlan, Carvalho, Guterres, and Correia; *Case Studies on Transport Policy*, 2026). It is not a claim that the publisher released these files as formal supplemental material.
 
-The computational files under `research/` contain three derived scenarios: `light` = São Paulo municipality, `medium` = pooled São Paulo/Campinas/Guarulhos, and `heavy` = São Paulo State. The analyses use an ANAC-derived inventory of 609 registered helipad candidates statewide and an IBGE-derived 1-km grid of 250,827 statewide cells.
+The computational files at the repository root contain three derived scenarios: `light` = São Paulo municipality, `medium` = pooled São Paulo/Campinas/Guarulhos, and `heavy` = São Paulo State. The analyses use an ANAC-derived inventory of 609 registered helipad candidates statewide and an IBGE-derived 1-km grid of 250,827 statewide cells.
 
 ## Included evidence and reproduction levels
 
-1. **Artifact integrity.** The computational inputs, selections, and results have a SHA-256 manifest under `research/MANIFEST_SHA256.txt`. Validate these entries before running scripts that regenerate outputs.
-2. **Saved-analysis validation.** The supplied `research/validation_report.json` records 147 continuous-allocation validations and status `passed`. This is a *supplied report*, not a claim that this repository's maintainers have rerun every calculation on every platform.
+1. **Artifact integrity.** The computational inputs, selections, and results have a SHA-256 manifest under `MANIFEST_SHA256.txt`. Validate these entries before running scripts that regenerate outputs.
+2. **Saved-analysis validation.** The supplied `validation_report.json` records 147 continuous-allocation validations and status `passed`. This is a *supplied report*, not a claim that this repository's maintainers have rerun every calculation on every platform.
 3. **Figures and tables.** The scripts regenerate figures and table fragments from included derived inputs and saved results.
-4. **Fresh stochastic experiments.** `python research/code/run_intensity.py --rerun` runs the sensitivity experiments and overwrites the corresponding checkpoint files in that working copy. Stochastic details and runtime may vary with hardware and dependencies.
+4. **Fresh stochastic experiments.** `python code/run_intensity.py --rerun` runs the sensitivity experiments and overwrites the corresponding checkpoint files in that working copy. Stochastic details and runtime may vary with hardware and dependencies.
 5. **Exact reoptimization.** Some procedures require `gurobipy` and an active Gurobi license, including exact mixed-integer reoptimization of the refined scenarios.
 
 ## Data boundaries
@@ -29,6 +29,6 @@ These are author-provided research artifacts, not formally publisher-hosted supp
 
 The final Elsevier proof PDF is **not** included in the computational archive; do not redistribute a production proof as an authorized published version. Link the published article or DOI after formal publication.
 
-The large geospatial input `research/data/heavy_grid.gpkg` is approximately 55 MiB, below GitHub's 100 MiB per-file limit but above its 50 MiB warning threshold. Keep this file intact because the supplied scripts use it.
+The large geospatial input `data/heavy_grid.gpkg` is approximately 55 MiB, below GitHub's 100 MiB per-file limit but above its 50 MiB warning threshold. Keep this file intact because the supplied scripts use it.
 
 No blanket license is applied to code or data until the respective rightsholders and redistribution terms have been confirmed.
