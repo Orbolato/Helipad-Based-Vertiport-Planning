@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Please cite the research article when using these results or computational materials."
+title: "Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State"
+type: software
+authors:
+  - family-names: Furlan
+    given-names: Rodrigo Mollo
+    orcid: https://orcid.org/0009-0009-8627-462X
+  - family-names: Carvalho
+    given-names: Lucas Orbolato
+    orcid: https://orcid.org/0000-0002-8402-5832
+  - family-names: Guterres
+    given-names: Marcelo Xavier
+    orcid: https://orcid.org/0000-0002-7414-3157
+  - family-names: Correia
+    given-names: Anderson Ribeiro
+    orcid: https://orcid.org/0000-0001-9933-864X
+url: https://orbolato.github.io/publications/helipad-based-vertiport-planning/
+repository-code: https://github.com/Orbolato/Helipad-Based-Vertiport-Planning
+keywords:
+  - urban air mobility
+  - vertiport planning
+  - facility location
+  - stochastic optimization
+  - São Paulo
+preferred-citation:
+  type: article
+  title: "Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State"
+  authors:
+    - family-names: Furlan
+      given-names: Rodrigo Mollo
+    - family-names: Carvalho
+      given-names: Lucas Orbolato
+    - family-names: Guterres
+      given-names: Marcelo Xavier
+    - family-names: Correia
+      given-names: Anderson Ribeiro
+  journal: Case Studies on Transport Policy
+  year: 2026
