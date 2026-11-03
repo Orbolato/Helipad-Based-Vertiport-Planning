@@ -24,29 +24,33 @@ The statewide case contains **250,827** 1-km grid cells. Feasible relay configur
 
 ## Computational supplement
 
-The author-provided computational package includes the Python optimization implementation, derived scenario inputs, original solution records, 45 demand-intensity runs, spatial sensitivity and feasibility checks, tables, figures, and supplementary information. It was originally prepared as a **local research/verification record**, not as an officially published Elsevier supplementary file.
+The **author-provided computational supplement** is organized under `research/` so its README and file manifest remain separate from this repository's publication metadata. The clean upload package contains **497 files**, with no compiled Python caches or local-only markers.
 
-**Publication status of files:** The website and citation metadata are available here. The 39-MB compressed research package requires a separate Git upload for its binary inputs; until that upload is completed, not all directories described below are available in this repository.
+Once the research package has been imported, its directory includes:
 
-When present, the package contains:
+- `research/code/`: capacitated location model, SMA-inspired search, VNS/relay procedures, sensitivity experiments, validation, and figure/table generation.
+- `research/data/`: derived ANAC/IBGE grid and candidate inputs, parameters, original selections, and statewide traces.
+- `research/results/`: 45 demand-intensity runs and saved composition, boundary, resolution, and geometric-envelope experiments, including paired JSON/NPZ allocation certificates.
+- `research/figures/` and `research/tables/`: generated figures and manuscript table fragments.
+- `research/Supplementary_Information.pdf` and `.tex`: detailed computational results supplied by the authors, not an official publisher-hosted supplement.
+- `research/README.md`, `research/requirements.txt`, `research/software_versions.json`, `research/validation_report.json`, and `research/MANIFEST_SHA256.txt`: usage, environment, reported validation, and file-integrity information.
 
-- `code/`: optimization, stochastic search, experiment drivers, result validation, and figure/table generation.
-- `data/`: derived ANAC/IBGE candidate/grid inputs and saved original configurations.
-- `results/`: seed-level selection, allocation, and sensitivity records.
-- `figures/` and `tables/`: generated visualizations and manuscript table fragments.
-- `Supplementary_Information.pdf`: descriptive computational results, not the journal's published article.
-- `MANIFEST_SHA256.txt`: integrity hashes for research files.
+**Availability:** If the `research/` folder is absent on GitHub, the computational ZIP has not yet been imported; the documentation and publication page alone do not constitute an uploaded code/data release.
 
-With Python 3.12 and the dependencies in `requirements.txt`:
+### Quick start
+
+With Python 3.12, from the repository root:
 
 ```bash
-python -m pip install -r requirements.txt
-python code/generate_tables.py
-python code/generate_figures.py
-python code/validate_results.py
+python -m pip install -r research/requirements.txt
+python research/code/generate_tables.py
+python research/code/generate_figures.py
+python research/code/validate_results.py
 ```
 
-Fresh stochastic experiments: `python code/run_intensity.py --rerun`. See the computational package's original instructions and `PROVENANCE.md` for coverage, data sourcing, environment, and Gurobi licensing requirements.
+To confirm file integrity **before** running scripts (which can rewrite generated files), run `sha256sum -c MANIFEST_SHA256.txt` from the `research/` directory on platforms that provide `sha256sum`.
+
+The supplied `research/validation_report.json` records 147 checked allocation records and 44 feasible outcomes among 45 demand-intensity runs. It is a saved report; it is not a guarantee of cross-platform bitwise reproduction. Some exact reoptimization commands require a **Gurobi license**. See `research/README.md` for the optional `run_intensity.py` and `run_spatial.py` commands, including their overwrite behavior.
 
 ## Data and software provenance
 
