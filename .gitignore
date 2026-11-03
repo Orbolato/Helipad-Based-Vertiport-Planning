@@ -1,3 +1,4 @@
+# Python caches and local environments
 __pycache__/
 *.py[cod]
 .venv/
@@ -8,9 +9,20 @@ venv/
 .pytest_cache/
 .mypy_cache/
 .ipynb_checkpoints/
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
+
+# Excluded large or local research intermediates
+*.gpkg
+*.npz
+*.pkl
+*.pickle
+*.sqlite
+*.db
+code/optimization_results/
 output/
 scratch/
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
