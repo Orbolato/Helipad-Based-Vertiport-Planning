@@ -6,6 +6,8 @@ Rodrigo Mollo Furlan, Lucas Orbolato Carvalho, Marcelo Xavier Guterres, and Ande
 
 **Publication page:** https://orbolato.github.io/publications/helipad-based-vertiport-planning/
 
+**Scholarly discovery:** This repository links to the [canonical publication page](https://orbolato.github.io/publications/helipad-based-vertiport-planning/), which is listed in the [author website sitemap](https://orbolato.github.io/sitemap.xml) and covered by the site's [robots.txt](https://orbolato.github.io/robots.txt). Search engines index the public repository separately under GitHub's own crawling rules. These links enable discovery but do not guarantee search-engine indexing.
+
 ## Study
 
 The study examines whether registered helipads can serve as candidates for strategic vertiport planning across three São Paulo planning contexts. The capacitated facility-location formulation incorporates population-weighted planning demand, candidate capacities, geometric access, candidate-reachable coverage, and a soft spacing preference. Exact optimization benchmarks the two smaller instances, while variable neighborhood search (VNS) and an SMA-inspired binary search/VNS relay support statewide screening.
@@ -35,9 +37,9 @@ This is a **compact, CSV-based research archive**, rather than the full original
 
 ### What can be inspected
 
-The included CSV results document 147 analysis records, 45 demand-intensity runs, two exact local configurations, and spatial-sensitivity summaries. The original scripts are retained for transparency, but **several scripts require research assets omitted from the lightweight release** (GeoPackages, `.npz` selection/certificate files, and some saved JSON records). Thus, commands such as `run_intensity.py`, `run_spatial.py`, `generate_figures.py`, `generate_tables.py`, and `validate_results.py` are **not fully executable from this package alone**.
+The optional results CSV package documents 147 analysis records, 45 demand-intensity runs, two exact local configurations, and spatial-sensitivity summaries. As of this update, the `results/` directory has not yet been uploaded to the public repository. The original scripts are retained for transparency, but **several scripts require research assets omitted from the lightweight release** (GeoPackages, `.npz` selection/certificate files, and some saved JSON records). Thus, commands such as `run_intensity.py`, `run_spatial.py`, `generate_figures.py`, `generate_tables.py`, and `validate_results.py` are **not fully executable from this package alone**.
 
-The saved results can still be inspected directly with pandas:
+Once the additional results files have been uploaded, they can be inspected directly with pandas:
 
 ```python
 import pandas as pd
