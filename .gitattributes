@@ -1,0 +1,13 @@
+*.csv text
+*.json text
+*.py text
+*.tex text
+*.md text
+*.txt text
+*.cff text
+*.html text
+*.pdf binary
+*.png binary
+*.npz binary
+*.gpkg binary
+*.pkl binary
