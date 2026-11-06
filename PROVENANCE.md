@@ -1,6 +1,6 @@
 # Provenance and scope of the lightweight research package
 
-This repository accompanies the accepted 2026 *Case Studies on Transport Policy* article **Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State**, by Furlan, Carvalho, Guterres, and Correia.
+This repository accompanies the published 2026 *Case Studies on Transport Policy* article **Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State**, by Furlan, Carvalho, Guterres, and Correia (Article 102000; https://doi.org/10.1016/j.cstp.2026.102000).
 
 ## Included
 
