@@ -1,6 +1,6 @@
 # Planning vertiport infrastructure from existing helipad sites
 
-**Accepted journal article (2026)** · *Case Studies on Transport Policy*
+**Published research article (2026)** · *Case Studies on Transport Policy*, Article 102000 · https://doi.org/10.1016/j.cstp.2026.102000
 
 Rodrigo Mollo Furlan, Lucas Orbolato Carvalho, Marcelo Xavier Guterres, and Anderson Ribeiro Correia
 
@@ -58,6 +58,6 @@ Candidate records derive from Brazil's ANAC civil-aerodrome inventory; spatial p
 
 ## Citation
 
-Cite the journal article for its scientific conclusions. DOI, volume, and article number will be added after publication. See [CITATION.cff](CITATION.cff).
+Cite the published journal article for its scientific conclusions: **Furlan, R. M., Carvalho, L. O., Guterres, M. X., and Correia, A. R. (2026).** *Planning vertiport infrastructure from existing helipad sites: A multi-scale case study in São Paulo State.* *Case Studies on Transport Policy*, Article 102000. https://doi.org/10.1016/j.cstp.2026.102000. The volume and complete publication date will be added once independently confirmed. See [CITATION.cff](CITATION.cff).
 
 **Related:** [Author publications](https://orbolato.github.io/publications/) · [São Paulo UAM network planning](https://github.com/Orbolato/UAM-Network-Planning-Sao-Paulo)
